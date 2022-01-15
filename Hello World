@@ -1,0 +1,21 @@
+# import random
+
+msg = "This is a message."
+
+check = msg.count("Message")
+
+print(check)
+
+# print(enumerate(my_something), sep="\n")
+#
+# Without the * before my_something
+# Console:
+# <enumerate object at 0x0000020432FAB500>
+# [Finished in 0.056s]
+
+# print(enumerate(*my_something), sep="\n")
+#
+# With the * before my_something
+# Console:
+# TypeError: enumerate() takes at most 2 arguments (6 given)
+# [Finished in 0.061s]
