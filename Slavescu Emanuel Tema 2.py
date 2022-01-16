@@ -68,3 +68,31 @@ valid_input_b = float(raw_user_input_b)
 # afisam rezultatul operatiei
 print(f"Rezultatul este: {math_operation(valid_input_a, valid_input_b)}")
 input()
+
+
+# ------------------------------------------------------------------------
+
+# Tema 3
+# Creati un program in care utilizatorul sa introduca un numar.
+# Validati daca acest numar este par sau impar si
+# afisati un raspuns in acest sens.
+
+# **********
+# colectam input-ul utilizatorului
+raw_user_input = input("Introduceti un numar.\n")
+
+# ne folosim de functia pe care am creat-o anterior pentru a valida input-ul
+while actual_int_check(raw_user_input) is False:
+    print("Input invalid!")
+    raw_user_input = input("Introduceti un numar.\n")
+    continue
+
+# daca am ajuns in acest punct inseamna ca utilizatorul a introdus un numar.
+valid_input = int(raw_user_input)
+
+# verificam daca este par sau impar si afisam Rezultatul
+if valid_input % 2 == 0:
+    print(f"{valid_input} este par.")
+else:
+    print(f"{valid_input} nu este par")
+input()
