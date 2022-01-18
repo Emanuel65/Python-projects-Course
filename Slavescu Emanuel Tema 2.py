@@ -153,3 +153,37 @@ if valid_input % 4 == 0:
     print("Anul introdus este bisect.")
 else:
     print("Anul introdus nu este bisect.")
+input()
+
+
+# ------------------------------------------------------------------------
+
+# Tema 6
+# Creati un program in care utilizatorul sa introduca un numar. Calculati daca
+# numarul este pozitiv, zero sau negativ.
+
+# **********
+# colectam input-ul utilizatorului
+raw_user_input = input("Introduceti un numar intreg.\n")
+
+# ne folosim de functia pe care am creat-o anterior pentru a valida input-ul
+while actual_int_check(raw_user_input) is False:
+    print("Input invalid!\n",
+          "Sirul de caracter nu este un numar intreg")
+    raw_user_input = input("Va rog introduceti un numar intreg.\n")
+    continue
+
+# daca am ajuns in acest punct inseamna ca utilizatorul a introdus un an.
+valid_input = int(raw_user_input)
+
+# verificam daca numarul este mai mare, mai mic, sau egal cu 0
+if valid_input < 0:
+    print("Ati introdus un numar negativ, valoarea lui pozitiva este:",
+          f"{abs(valid_input)}")
+elif valid_input == 0:
+    print("Ati introdus numarul 0")
+else:
+    if valid_input < 10:
+        print("numar intre 0 si 10")
+    else:
+        print("numar mai mare ca 10")
