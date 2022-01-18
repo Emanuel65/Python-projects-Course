@@ -96,3 +96,33 @@ if valid_input % 2 == 0:
 else:
     print(f"{valid_input} nu este par")
 input()
+
+
+# ------------------------------------------------------------------------
+
+# Tema 4
+# Creati un program in care utilizatorul sa introduca un sir de caractere.
+# Validati daca acest sir are in interior sirul de caractere “este” si
+# afisati un raspuns in acest sens.
+
+# **********
+# cream lista de caractere tinta
+target_chars = ("!", ",", ".", "?")
+
+# colectam input-ul utilizatorului
+user_input = input("Introduceti un sir de caractere.\n")
+
+# verificam daca exista "este"
+if "este" in user_input:
+    # verificam daca are unul din caracterele tinta
+    if user_input.endswith(target_chars):
+        # afisam rezultatul si caracterul folosit
+        print("sirul de caractere contine \"este\" si se termina cu",
+              f"{user_input[-1]}")
+    # afisam rezultatul si indicam faptu ca nu contine niciun caracter tinta
+    else:
+        print(f"sirul de caractere contine \"este\" dar nu si {target_chars}")
+# afisam lipsa cuvantului "este"
+else:
+    print("Sirul de caractere nu contine \"este\"")
+    input()
