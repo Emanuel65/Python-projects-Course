@@ -126,3 +126,30 @@ if "este" in user_input:
 else:
     print("Sirul de caractere nu contine \"este\"")
     input()
+
+
+# ------------------------------------------------------------------------
+
+# Tema 5
+# Creati un program in care utilizatorul sa introduca un an.
+# Calculati daca anul este bisect sau nu si afisati un raspuns in acest sens.
+
+# **********
+# colectam input-ul utilizatorului
+raw_user_input = input("Introduceti un an.\n")
+
+# ne folosim de functia pe care am creat-o anterior pentru a valida input-ul
+while actual_int_check(raw_user_input) is False:
+    print("Input invalid!\n",
+          "Sirul de caracter nu este un an")
+    raw_user_input = input("Va rog introduceti un an.\n")
+    continue
+
+# daca am ajuns in acest punct inseamna ca utilizatorul a introdus un an.
+valid_input = int(raw_user_input)
+
+# verificam daca anul este bisect
+if valid_input % 4 == 0:
+    print("Anul introdus este bisect.")
+else:
+    print("Anul introdus nu este bisect.")
