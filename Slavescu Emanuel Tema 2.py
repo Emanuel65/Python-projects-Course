@@ -187,3 +187,50 @@ else:
         print("numar intre 0 si 10")
     else:
         print("numar mai mare ca 10")
+input()
+
+
+# ------------------------------------------------------------------------
+
+# Tema 7
+# Creati un program care are ca scop un meniu.
+
+# **********
+# afisam optiunile posibile
+print("1 - Afisare lista de cumparaturi",
+      "2 - Adaugare element",
+      "3 - Stergere element",
+      "4 - Stergere lista de cumparaturi",
+      "5 - cautare lista de cumparaturi")
+
+# colectam input-ul utilizatorului
+raw_user_input = input("Introduceti numarul unei optiuni (1 - 5).\n")
+
+# declaram o variabila care semnaleaza daca s-a introdus un numar
+valid_number = True
+
+# declaram o variabila care semnaleaza daca optiunea este in meniu
+valid_menu_option = True
+
+# declaram o functie care sa verifice daca input-ul este valid si sa returneze
+# numarul optiunii
+def check_valid_menu_option(raw_input):
+    if actual_int_check(raw_input) is False:
+        valid_number = False
+    else
+        valid_input = int(raw_input)
+        if valid_input < 1 or valid_input > 5:
+            valid_menu_option = False
+        else:
+            return valid_input
+
+# procesam optiunea userului
+check_valid_menu_option(raw_user_input)
+
+# validam input-ul
+    while valid_number == False or valid_menu_option == False:
+        if valid_number == False:
+            print("Input invalid!\n")
+            raw_user_input = input("Va rog introduceti un numar.")
+            check_valid_menu_option(raw_user_input)
+        elif 
