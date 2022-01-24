@@ -221,9 +221,7 @@ def check_valid_menu_option(raw_input):
         valid_input = int(raw_input)
         if valid_input < 1 or valid_input > 5:
             valid_menu_option = False
-        else:
-            valid_input = int(raw_input)
-            return valid_input
+
 
 # procesam optiunea userului
 check_valid_menu_option(raw_user_input)

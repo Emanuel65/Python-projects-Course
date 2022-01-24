@@ -1,0 +1,22 @@
+# Tema 2
+# Scrieti un program ce va numara cate caractere are un sir de caractere dat
+# de utilizator. Aceasta numarare sa se realizeze cu ajutorul unui for
+# fara a utiliza len(). La final afisati rezultatul.
+
+# **********
+# stocam input-ul userului intr-o variabila
+user_input = input("Va rog introduceti un sir de caractere.\n")
+
+# declaram si initializam variabila de numarare la 0
+number_of_characters = 0
+
+# cream un for loop care sa treaca prin sirul de caractere si sa incrementeze
+# variabila de numarare cu 1
+for i in user_input:
+    number_of_characters += 1
+
+# afisam numarul de caractere
+if number_of_characters == 1:
+    print(f"String-ul dvs. are {number_of_characters} caracter.\n")
+else:
+    print(f"String-ul dvs. are {number_of_characters} caractere.\n")
