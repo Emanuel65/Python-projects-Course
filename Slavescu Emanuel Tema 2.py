@@ -232,7 +232,7 @@ check_valid_menu_option(raw_user_input)
             print("Input invalid!\n")
             raw_user_input = input("Va rog introduceti un numar.")
             check_valid_menu_option(raw_user_input)
-        elif :
+        elif:
             print("Input invalid!\n")
             raw_user_input = input("Va rog introduceti una din optiuni.")
             check_valid_menu_option(raw_user_input)
